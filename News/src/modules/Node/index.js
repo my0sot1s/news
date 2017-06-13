@@ -15,7 +15,7 @@ const shadow = {
 class NodeItem extends Component {
   constructor(props) {
     super(props)
-    this.image = /src=\"([^(\")]*)/.exec(this.props.data.content)
+    this.image = /src=\"([^(\")]*)/.exec(this.props.data.content) || 'https://s-media-cache-ak0.pinimg.com/600x315/ac/2a/75/ac2a75a5d8457b7ec0bcf61c06b85416.jpg'
     this.infor = /<\/a>(.*)$/.exec(this.props.data.content) || ''
   }
   state = {
@@ -52,7 +52,8 @@ class NodeItem extends Component {
             </View>
             <WebView
               source={{ uri: this.props.data.link }}
-              style={{ height: 0.9 * height, width, marginTop: 5 }} />
+              style={{ height: 0.9 * height, width, marginTop: 5 }}
+              renderLoading={() => <View style={{ flex: 1 }}><Text>Loadding...</Text></View>} />
           </View>
         </Modal>
       </View>

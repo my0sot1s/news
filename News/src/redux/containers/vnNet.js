@@ -14,7 +14,7 @@ class VnNet extends Component {
       routers: [
         { _key: 'vn_net_hot', title: 'Trang chủ', link: 'http://vietnamnet.vn/rss/home.rss' },
         { _key: 'vn_net_law', title: 'Pháp luật', link: 'http://vietnamnet.vn/rss/phap-luat.rss' },
-        { _key: 'vn_net_tech', title: 'Công nghệ', link: '	http://vietnamnet.vn/rss/cong-nghe.rss' },
+        { _key: 'vn_net_tech', title: 'Công nghệ', link: 'http://vietnamnet.vn/rss/cong-nghe.rss' },
         { _key: 'vn_net_economies', title: 'Kinh Doanh', link: 'http://vietnamnet.vn/rss/kinh-doanh.rss' },
         { _key: 'vn_net_sports', title: 'Thể Thao', link: 'http://vietnamnet.vn/rss/the-thao.rss' },
         { _key: 'vn_net_educations', title: 'Giáo dục', link: 'http://vietnamnet.vn/rss/giao-duc.rss' },

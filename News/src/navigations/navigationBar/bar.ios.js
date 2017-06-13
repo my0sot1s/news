@@ -4,6 +4,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { ScrollView, Image, Text, View } from 'react-native'
 import VnExpress from '../../redux/containers/vnExpress'
 import VnNet from '../../redux/containers/vnNet'
+import DanTri from '../../redux/containers/danTri'
 import Screen from '../screen'
 
 
@@ -36,7 +37,7 @@ const AppTabs = TabNavigator({
     }
   },
   Dantri: {
-    screen: Screen,
+    screen: DanTri,
     navigationOptions: {
       tabBarLabel: 'DanTri',
       tabBarIcon: ({ tintColor }) => (
@@ -62,6 +63,7 @@ const AppTabs = TabNavigator({
     }
   },
 }, {
+    animationEnabled: true,
     tabBarOptions: {
       activeTintColor: '#e91e63',
     },

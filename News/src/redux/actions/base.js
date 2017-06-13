@@ -2,7 +2,7 @@ import { apiFetch } from './api'
 import * as types from '../types/base'
 
 
-export const getAction = (link, page) => {
+export const getAction = (link = 'http://vietnamnet.vn/rss/home.rss', page = 'default') => {
   return dispatch => {
     apiFetch(link)
       .then(payload => {
